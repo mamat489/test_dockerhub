@@ -1,5 +1,5 @@
 FROM alpine
 
-RUN apt update
-
+RUN apk update
+RUN apk add sudo 
 ENTRYPOINT [ "echo" , "Hi Pierre !"]
